@@ -1,0 +1,39 @@
+# Checkpoints and trained weights - derived data under the CheXpert RUA.
+# Never commit these.
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+
+# Large archives and dataset downloads
+archive.zip
+archive*.zip
+CheXpert*/
+
+# Image data - obtain from NIH / Stanford directly. Never redistribute.
+/images-224/
+images/
+images_*/
+data/
+*.png
+*.jpg
+*.jpeg
+!docs/*.png
+
+# Generated proof artifacts (regenerate by running the notebook)
+proofs/
+proofs_*/
+tables/
+fig/
+*.csv
+*.txt
+*.zip
+!figs.zip
+
+# Notebook and Python noise
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.DS_Store
